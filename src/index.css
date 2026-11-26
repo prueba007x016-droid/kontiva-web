@@ -8,11 +8,12 @@
 }
 
 @layer components {
-  .card { @apply rounded-2xl bg-white shadow-card border border-slate-200/70 dark:bg-slate-900 dark:border-slate-800; }
-  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed; }
-  .btn-primary { @apply btn bg-kontiva-navy text-white hover:bg-kontiva-dark; }
+  .card { @apply rounded-2xl bg-white shadow-card border border-slate-200/60 dark:bg-slate-900 dark:border-slate-800 transition-shadow hover:shadow-lg; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98]; }
+  .btn-primary { @apply btn bg-gradient-to-r from-kontiva-blue to-kontiva-green text-white shadow-md hover:shadow-lg hover:brightness-110; }
   .btn-secondary { @apply btn bg-slate-100 text-slate-800 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700; }
   .btn-ghost { @apply btn hover:bg-slate-100 dark:hover:bg-slate-800; }
-  .input { @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none focus:border-kontiva-blue focus:ring-2 focus:ring-kontiva-blue/20 dark:bg-slate-900 dark:border-slate-700; }
+  .btn-outline { @apply btn border border-slate-300 bg-white text-slate-800 hover:border-kontiva-blue hover:text-kontiva-blue dark:bg-slate-900 dark:border-slate-700; }
+  .input { @apply w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm outline-none transition-colors focus:border-kontiva-blue focus:ring-2 focus:ring-kontiva-blue/25 dark:bg-slate-900 dark:border-slate-700; }
   .label { @apply text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400; }
 }

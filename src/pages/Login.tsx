@@ -25,7 +25,7 @@ export default function Login() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-kontiva-gradient p-4">
-      <div className="w-full max-w-md rounded-3xl bg-white p-8 shadow-2xl dark:bg-slate-900">
+      <div className="w-full max-w-md rounded-3xl bg-white/95 p-8 shadow-2xl backdrop-blur dark:bg-slate-900/95">
         <div className="flex flex-col items-center mb-6">
           <img src={`${import.meta.env.BASE_URL}kontiva_icono.jpg`} alt="KONTIVA" className="h-16 w-16 rounded-2xl object-contain mb-3" />
           <h1 className="text-2xl font-bold text-kontiva-navy dark:text-white">KONTIVA</h1>
@@ -50,7 +50,7 @@ export default function Login() {
             </div>
           </div>
           {error && <div className="rounded-xl bg-red-50 px-3 py-2 text-sm text-red-700 dark:bg-red-900/30 dark:text-red-300">{error}</div>}
-          <button type="submit" disabled={loading} className="btn-primary w-full">
+          <button type="submit" disabled={loading} className="btn-primary w-full shadow-lg">
             {loading ? 'Ingresando...' : 'Iniciar sesión'}
           </button>
         </form>
