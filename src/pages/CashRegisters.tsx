@@ -86,7 +86,7 @@ export default function CashRegisters() {
                 <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                 <YAxis tick={{ fontSize: 10 }} />
                 <Tooltip formatter={(v: any) => currency(v)} />
-                <Bar dataKey="value" fill="#002060" radius={[4, 4, 0, 0]} />
+                <Bar dataKey="value" fill="#001637" radius={[4, 4, 0, 0]} />
               </BarChart>
             </ResponsiveContainer>
           </CardContent>
@@ -109,7 +109,7 @@ export default function CashRegisters() {
                   <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                   <YAxis tick={{ fontSize: 10 }} />
                   <Tooltip formatter={(v: any) => currency(v)} />
-                  <Bar dataKey="value" fill="#0066cc" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="value" fill="#0160c7" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             )}

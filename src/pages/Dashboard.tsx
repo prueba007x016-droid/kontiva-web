@@ -7,7 +7,7 @@ import { currency, number } from '../lib/utils';
 import { RefreshCw } from 'lucide-react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 
-const COLORS = ['#002060', '#0066cc', '#00b040', '#f59e0b', '#ef4444'];
+const COLORS = ['#001637', '#0160c7', '#0cb351', '#f59e0b', '#ef4444'];
 
 export default function Dashboard() {
   const ds = getDataSource();
@@ -89,7 +89,7 @@ export default function Dashboard() {
                     <XAxis dataKey="hour" tick={{ fontSize: 10 }} />
                     <YAxis tick={{ fontSize: 10 }} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Bar dataKey="value" fill="#0066cc" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="value" fill="#0160c7" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -102,7 +102,7 @@ export default function Dashboard() {
                     <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                     <YAxis tick={{ fontSize: 10 }} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Line type="monotone" dataKey="value" stroke="#002060" strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="value" stroke="#001637" strokeWidth={2} dot={false} />
                   </LineChart>
                 </ResponsiveContainer>
               </CardContent>

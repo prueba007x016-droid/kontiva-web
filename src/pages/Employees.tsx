@@ -77,7 +77,7 @@ export default function Employees() {
                   <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                   <YAxis tick={{ fontSize: 10 }} />
                   <Tooltip formatter={(v: any) => currency(v)} />
-                  <Bar dataKey="total" fill="#002060" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="total" fill="#001637" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
@@ -90,7 +90,7 @@ export default function Employees() {
                   <XAxis dataKey="name" tick={{ fontSize: 11 }} />
                   <YAxis tick={{ fontSize: 10 }} />
                   <Tooltip />
-                  <Bar dataKey="tickets" fill="#0066cc" radius={[4, 4, 0, 0]} />
+                  <Bar dataKey="tickets" fill="#0160c7" radius={[4, 4, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>

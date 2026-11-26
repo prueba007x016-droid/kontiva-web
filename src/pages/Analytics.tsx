@@ -7,7 +7,7 @@ import { Select } from '../components/ui/Form';
 import { currency } from '../lib/utils';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, PieChart, Pie, Cell, Legend } from 'recharts';
 
-const COLORS = ['#002060', '#0066cc', '#00b040', '#f59e0b', '#ef4444', '#8b5cf6'];
+const COLORS = ['#001637', '#0160c7', '#0cb351', '#f59e0b', '#ef4444', '#8b5cf6'];
 
 export default function Analytics() {
   const ds = getDataSource();
@@ -51,7 +51,7 @@ export default function Analytics() {
                     <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                     <YAxis tick={{ fontSize: 10 }} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Line type="monotone" dataKey="value" stroke="#002060" strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="value" stroke="#001637" strokeWidth={2} dot={false} />
                   </LineChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -64,7 +64,7 @@ export default function Analytics() {
                     <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                     <YAxis tick={{ fontSize: 10 }} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Line type="monotone" dataKey="value" stroke="#0066cc" strokeWidth={2} dot={false} />
+                    <Line type="monotone" dataKey="value" stroke="#0160c7" strokeWidth={2} dot={false} />
                   </LineChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -77,7 +77,7 @@ export default function Analytics() {
                     <XAxis dataKey="date" tick={{ fontSize: 10 }} />
                     <YAxis tick={{ fontSize: 10 }} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Bar dataKey="value" fill="#00b040" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="value" fill="#0cb351" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>
@@ -103,7 +103,7 @@ export default function Analytics() {
                     <XAxis type="number" tick={{ fontSize: 10 }} />
                     <YAxis dataKey="name" type="category" tick={{ fontSize: 9 }} width={120} />
                     <Tooltip formatter={(v: any) => currency(v)} />
-                    <Bar dataKey="value" fill="#002060" radius={[0, 4, 4, 0]} />
+                    <Bar dataKey="value" fill="#001637" radius={[0, 4, 4, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </CardContent>

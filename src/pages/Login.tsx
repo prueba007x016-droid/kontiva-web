@@ -24,7 +24,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-kontiva-navy via-kontiva-blue to-kontiva-dark p-4">
+    <div className="min-h-screen flex items-center justify-center bg-kontiva-gradient p-4">
       <div className="w-full max-w-md rounded-3xl bg-white p-8 shadow-2xl dark:bg-slate-900">
         <div className="flex flex-col items-center mb-6">
           <img src={`${import.meta.env.BASE_URL}kontiva_icono.jpg`} alt="KONTIVA" className="h-16 w-16 rounded-2xl object-contain mb-3" />
